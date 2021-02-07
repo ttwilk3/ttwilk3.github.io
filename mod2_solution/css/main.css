@@ -36,6 +36,7 @@ p {
 #hideme1, #hideme2, #hideme3 {
   display: none;
 }
+
 #title1, #title2, #title3 {
   position: absolute;
   top: 0;
@@ -50,9 +51,9 @@ p {
 
 #title1 { background: #FF7F50; }
 
-#title2 {	background: #556B2F; }
+#title2 { background: #556B2F; }
 
-#title3 {	background: #9932CC; }
+#title3 { background: #9932CC; }
 
 div.content {
 	position: relative;
