@@ -9,13 +9,14 @@ body {
 
 h1 {
 	margin-bottom: 15px;
+  font-size: 26px;
 }
 
 p {
 	width: 90%;
 	height: 150px;
-    margin: auto;
-    margin-top: 25px;
+  margin: auto;
+  margin-top: 25px;
 	color: #FFF8DC;
 	background: #5F9EA0;
 	font-size: 15px;
@@ -25,46 +26,33 @@ p {
 #header {
 	color: white;
 	text-align: center;
+  font-size: 26px;
+}
+#categories {
+  color: white;
+  display: none;
 }
 
-#title1 {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 18px;
-	border: 2px solid #483D8B;
-	border-radius: 0 0 0 5px;
-	background: #FF7F50;
-	color: #000000;
-	padding: 2px;
-	float:right;
+#hideme1, #hideme2, #hideme3 {
+  display: none;
+}
+#title1, #title2, #title3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 19px;
+  border: 1px solid #000000;
+  border-radius: 0 0 0 5px;
+  color: #000000;
+  padding: 2px;
+  float:right;
 }
 
-#title2 {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 18px;
-	border: 2px solid #483D8B;
-	border-radius: 0 0 0 5px;
-	background: #556B2F;
-	color: #000000;
-	padding: 2px;
-	float:right;
-}
+#title1 { background: #FF7F50; }
 
-#title3 {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 18px;
-	border: 2px solid #483D8B;
-	border-radius: 0 0 0 5px;
-	background: #9932CC;
-	color: #000000;
-	padding: 2px;
-	float:right;
-}
+#title2 {	background: #556B2F; }
+
+#title3 {	background: #9932CC; }
 
 div.content {
 	position: relative;
@@ -72,10 +60,15 @@ div.content {
 	color: #FFF8DC;
 	border: 1px solid black;
 	margin: 5px;
-    overflow-y: scroll;
-	overflow-x: hidden;
+  overflow: hidden;
 	padding: 5px;
 	display: inline-block;
+}
+
+div.content:hover {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  cursor: n-resize;
 }
 
 div.row {
@@ -176,6 +169,38 @@ div.row {
 /**** Mobile Devices ****/
 
 @media (max-width: 767px) {
+  #categories {
+    font-size: 20px;
+    font-family: Trebuchet MS, Helvetica;
+    display: block;
+  }
+  #header {
+    display: none;
+  }
+  #title1, #title2, #title3 {
+    display: none;
+  }
+  #hideme1, #hideme2, #hideme3 {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 19px;
+    border: 1px solid #000000;
+    background: #9932CC;
+    color: #000000;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+  }
+  #hideme1 { background: #FF7F50; }
+  #hideme2 { background: #556B2F; }
+  #hideme3 { background: #9932CC; }
+  div.content {
+    display: inline-block;
+    padding: 0px;
+    padding-bottom: 5px;
+  }
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
