@@ -1,0 +1,39 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav div.container { margin: 5px; } 
+
+div ul li { 
+	border-bottom: 1.5px solid black;
+	background: gainsboro;
+ }
+
+ #top-nav {
+ 	border-top: 1.5px solid black;
+ }
+
+p {
+	width: 90%;
+	height: 700px;
+	margin: auto;
+	color: #FFF8DC;
+	background: #5F9EA0;
+	font-size: 15px;
+}
+
+div.content {
+	background: #5F9EA0;
+	color: #FFF8DC;
+	border: 1px solid black;
+	margin: 5px;
+    overflow: auto;
+	padding: 5px;
+	display: inline-block;
+}
+
+#chicken, #sushi, #beef {
+	padding:5px;
+	margin:5px;
+	color:black;
+}
