@@ -1,0 +1,14 @@
+<!-- <ul class="foundItems"> -->
+<table>
+  <!-- <li ng-repeat="item in narrowDown.found"> -->
+  	<tbody>
+  	<tr ng-if="!narrowDown.itemsEmpty" ng-repeat="item in narrowDown.found">
+	<td>{{ item.name }}</td>
+	<td>{{ item.short_name }}</td>
+	<td>{{ item.description }}</td>
+    <td><button ng-click="narrowDown.onRemove({index: $index});">Don't want this one!</button></td>
+	</tr>
+	</tbody>
+  <!-- </li> -->
+</table>
+<!-- </ul> -->
