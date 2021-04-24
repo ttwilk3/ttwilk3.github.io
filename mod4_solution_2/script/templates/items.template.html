@@ -1,0 +1,21 @@
+<div class="container">
+<h1>Items</h1>
+
+<table>
+  	<tbody>
+  	<tr>
+  		<th>Name</th>
+  		<th>Price Small</th>
+  		<th>Price Large</th>
+  		<th>Description</th>
+  	</tr>
+  	<tr data-ng-repeat="item in itemsContr.items">
+		<td>{{ item.name }}</td>
+		<td>{{ item.price_small }}</td>
+		<td>{{ item.price_large }}</td>
+		<td>{{ item.description }}</td>
+	</tr>
+	</tbody>
+</table>
+
+</div>
