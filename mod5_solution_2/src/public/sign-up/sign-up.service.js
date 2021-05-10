@@ -18,10 +18,10 @@ function SignUpService($http) {
 		return service.user;
 	}
 
-	service.getItemsForCategory = function(categoryShortName) {
-		console.log(categoryShortName);
-		// https://twilki15-course5.herokuapp.com/menu_items/SHORT-NAME.json
-		let appendedUrl = "https://twilki15-course5.herokuapp.com/menu_items/" + categoryShortName + ".json";
+	service.getMenuItem = function(shortName) {
+		//console.log(shortName);
+		let appendedUrl = "https://twilki15-course5.herokuapp.com/menu_items/" + shortName + ".json";
+
 		return $http({
 				method: "GET",
 				url: appendedUrl
